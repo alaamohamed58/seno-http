@@ -1,7 +1,6 @@
 const fs = require("node:fs/promises");
-const { createWriteStream } = require("fs");
 
-const Seno = require("./seno/seno");
+const Seno = require("./seno/Seno");
 
 const seno = new Seno();
 
