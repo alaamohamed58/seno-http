@@ -3,10 +3,10 @@ import fs from "node:fs/promises";
 
 export class Seno {
   server = http.createServer();
-  routes = {};
+  routes: any = {};
   constructor() {
     //private
-    // this.server = http.createServer();
+    //this.server = http.createServer();
     this.server.on("request", (req: Request, res: any) => {
       res.sendFile = async (path: string, mime: string) => {
         const fileHandle = await fs.open(path, "r");
